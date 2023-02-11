@@ -1,12 +1,5 @@
 <html>
   <head>
-    <script>
-      function updateUrl() {
-        var name = document.getElementById("name").value;
-        var year = document.getElementById("year").value;
-        document.getElementById("url").innerHTML = "https://localhost:8080/?name=" + name + "&year=" + year;
-      }
-    </script>
   </head>
   <body>
     <form>
@@ -15,5 +8,6 @@
       <input type="submit" id="button" value="Submit" onclick="updateUrl()">
     </form>
     <h3 id="url">https://localhost:8080/</h3>
+	  <script src="script.js"></script>
   </body>
 </html>
