@@ -1,8 +1,19 @@
-<!DOCTYPE html>
 <html>
+  <head>
+    <script>
+      function updateUrl() {
+        var name = document.getElementById("name").value;
+        var year = document.getElementById("year").value;
+        document.getElementById("url").innerHTML = "https://localhost:8080/?name=" + name + "&year=" + year;
+      }
+    </script>
+  </head>
   <body>
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form>
+      <input type="text" id="name" name="name">
+      <input type="number" id="year" name="year">
+      <input type="submit" id="button" value="Submit" onclick="updateUrl()">
+    </form>
+    <h3 id="url">https://localhost:8080/</h3>
   </body>
-
 </html>
